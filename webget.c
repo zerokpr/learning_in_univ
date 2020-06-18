@@ -95,15 +95,11 @@ int main(){
       return 0;
     }
   }
+  
   if(close(sockfd) < 0){
     perror("close error:");
     return 0;
-  }
-  if(fclose(file) != 0){
-    perror("fclose error2:");
-    return 0;
-  }
- 
+  } 
   return 0;
 }
 
